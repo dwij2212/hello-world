@@ -20,6 +20,6 @@ int main(int argc, char const *argv[])
 		/* code */
 		sum += atoi(argv[i]);
 	}
-	cout<<sum;
+	cout<<"Sum of all CLA's is "<<sum;
 	return 0;
 }
