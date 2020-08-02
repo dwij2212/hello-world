@@ -18,8 +18,19 @@ int main(int argc, char const *argv[])
 	for (int i = 1; i < argc; ++i)
 	{
 		/* code */
-		sum += atoi(argv[i]);
+		
+		try 
+		{ 
+		    sum += std::stoi(argv[i]);
+		    //if (i == 0) no need to check!
+		    std::cout << i << endl;
+		}
+		catch(std::exception const & e)
+		{
+		    cout<<"error : " << e.what();
+		    return 1;
+		}
 	}
-	cout<<sum;
+	cout<<"The sum is :"<<sum;
 	return 0;
 }
