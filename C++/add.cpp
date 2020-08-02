@@ -31,6 +31,6 @@ int main(int argc, char const *argv[])
 		    return 1;
 		}
 	}
-	cout<<"The sum is :"<<sum;
+	cout<<"Sum of all CLA's is "<<sum;
 	return 0;
 }
